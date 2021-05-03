@@ -1,0 +1,49 @@
+body{
+    background-color: white;
+}
+h1{
+    color:black;
+    margin-bottom: 10px;
+    text-align: center;
+}
+h3{
+    color: navy;
+    margin-bottom: 20px;
+}
+label{
+    color: black;
+}
+
+input.boton{
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+}
+
+div{
+    background: buttonface;
+    width: 500px;
+    border-radius: 6px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: flexbox;
+    align-items: center;
+}
+div input{
+    margin-bottom: 15px;
+    width: fit-content;
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#tablita{
+    border-color: black;
+    text-align: center;
+    margin-left: 50%;
+}
+
+

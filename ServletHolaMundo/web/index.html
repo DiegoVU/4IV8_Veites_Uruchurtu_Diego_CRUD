@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Registros de Usuarios</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/maistrostyle.css">
+        <script language="JavaScript" type="text/JavaScript" src="js/validacion.js"></script>
+    </head>
+    <body>
+        <div class="container" >
+            
+            <div class="containerRegistro">
+                <form name="formulario" method="post" action="Registro" onsubmit="return validarRegistro(this)">
+                <label>Nombre:</label>
+                <input type="text" name="nombre">
+                <br>
+                <label>Apellido Paterno: </label>
+                <input type="text" name="appat" >
+                <br>
+                <label>Apellido Materno: </label>
+                <input type="text" name="appmat" >
+                <br>
+                <label>Edad: </label>
+                <input type="number" name="edad" min="01" max="99" size="2" >
+                <br>
+                <label>Correo: </label>
+                <input type="email" name="correo">
+                <br>
+                <input type="submit" value="Registro de Usuarios" class="boton">
+                <input type="reset" value="Borrar Registro" class="boton">
+            </form>
+            </div>
+            <br>
+            <div class="containerConsulta" >
+                <br>
+                <h3 class="textou">CONSULTA DE REGISTROS</h3>
+                <form method="get" name="consultarregistro" action="Consultar">
+                    <input type="submit" value="Consultar Tabla" class="boton">
+                </form>
+            </div>
+            <br>
+            <div class="containerEliminar" >
+                <br>
+                <h3>ELIMINAR:</h3>
+                <form method="post" name="formularioeliminar" action="Eliminar" onsubmit="return validarCosas(this)">
+                    <label>ID del Usuario a Eliminar: </label>
+                    <input type="number" name="ideliminar" >
+                    <br>
+                    <input type="submit" value="Eliminar Usuario" class="boton">
+                </form>
+                
+            </div>
+            
+            <br>
+            
+            <div class="containerActualizar">
+                <br>
+                <h3>MODIFICAR:</h3>
+                <form method="post" name="formulariomodificar" action="Modificar" onsubmit="return validarCosas(this)">
+                    <label>ID del Usuario a modificar: </label>
+                    <input type="number" name="idcambiar" >
+                    <br>
+                    <label>Nombre: </label>
+                    <input type="text" name="nombre">
+                    <br>
+                    <label>Apellido Paterno: </label>
+                    <input type="text" name="appat" >
+                    <br>
+                    <label>Apellido Materno: </label>
+                    <input type="text" name="appmat" >
+                    <br>
+                    <label>Edad: </label>
+                    <input type="number" name="edad" min="01" max="99" size="2" >
+                    <br>
+                    <label>Correo: </label>
+                    <input type="email" name="correo">
+                    <br>
+                    <br>
+                    <input type="submit" value="Modificar Usuario" class="boton">
+                </form>
+            </div>
+            
+            <br>
+            
+        </div>
+    </body>
+</html>
